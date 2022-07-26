@@ -1,0 +1,25 @@
+## Spring Datasource
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/quartz_mail_demo
+    username: root
+    password:
+
+ ## Quartz Properties
+  quartz:
+    job-store-type: jdbc
+    properties:
+      quartz:
+        threadPool:
+          threadCount:5:
+
+
+ ## Mail Properties
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: shaquibjr1@gmail.com
+    password: ovvllpnbthauymax
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
